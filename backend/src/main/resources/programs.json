@@ -1,0 +1,84 @@
+[
+  {
+    "id": "student-wellness",
+    "title": "Student Wellness",
+    "description": "A sample wellness credit for New York students aged 18 or older.",
+    "version": 1,
+    "priority": 90,
+    "conditions": [
+      {
+        "attribute": "age",
+        "operator": "GTE",
+        "value": 18,
+        "explanation": "Must be at least 18 years old."
+      },
+      {
+        "attribute": "residency",
+        "operator": "EQ",
+        "value": "NY",
+        "explanation": "Requires New York residency."
+      },
+      {
+        "attribute": "student",
+        "operator": "EQ",
+        "value": true,
+        "explanation": "Requires current student status."
+      }
+    ]
+  },
+  {
+    "id": "community-access",
+    "title": "Community Access",
+    "description": "A fictional community services program for residents of selected states.",
+    "version": 1,
+    "priority": 70,
+    "conditions": [
+      {
+        "attribute": "residency",
+        "operator": "IN",
+        "value": [
+          "NY",
+          "NJ",
+          "CT"
+        ],
+        "explanation": "Available in New York, New Jersey, or Connecticut."
+      }
+    ]
+  },
+  {
+    "id": "mobility-support",
+    "title": "Mobility Support",
+    "description": "A sample assistance program using a self-reported accessibility attribute.",
+    "version": 1,
+    "priority": 80,
+    "conditions": [
+      {
+        "attribute": "age",
+        "operator": "GTE",
+        "value": 18,
+        "explanation": "Must be at least 18 years old."
+      },
+      {
+        "attribute": "disability",
+        "operator": "EQ",
+        "value": true,
+        "explanation": "Requires a qualifying disability attribute."
+      }
+    ]
+  },
+  {
+    "id": "senior-wellness",
+    "title": "Senior Wellness",
+    "description": "A fictional wellness program for adults aged 65 or older.",
+    "version": 1,
+    "priority": 60,
+    "conditions": [
+      {
+        "attribute": "age",
+        "operator": "GTE",
+        "value": 65,
+        "explanation": "Must be at least 65 years old."
+      }
+    ]
+  }
+]

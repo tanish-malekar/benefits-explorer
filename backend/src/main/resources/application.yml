@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5433/benefits}
+    username: ${DATABASE_USER:benefits}
+    password: ${DATABASE_PASSWORD:local-demo-only}
+  sql:
+    init:
+      mode: always
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+server.error.include-message: always
