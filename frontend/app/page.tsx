@@ -35,7 +35,7 @@ export default function Home() {
  }
  function update(key:string,value:Attributes[string]){setAttributes(prev=>({...prev,[key]:value}));}
  return <><header><span className="brand">BenefitBridge</span><span>Independent demo · synthetic programs</span></header>
- <main id="main"><section className="intro"><p className="eyebrow">MORE CLARITY. FEWER GUESSWORK.</p><h1>Find your next opportunity.</h1><p>Explore sample programs, see what qualifies, and understand what information is still needed.</p></section>
+ <main id="main"><section className="intro"><p className="eyebrow">MORE CLARITY. LESS GUESSWORK.</p><h1>Find your next opportunity.</h1><p>Explore sample programs, see what qualifies, and understand what information is still needed.</p></section>
  <p role="alert" className="error">{error}</p><p role="status">{message || (busy?'Updating…':'')}</p>
  <div className="workspace"><aside><form onSubmit={save}><h2>Your demo profile</h2><p>Self-reported values are for this local demo only.</p>
  <label htmlFor="age">Age</label><input id="age" type="number" min="0" max="130" value={attributes.age==null?'':String(attributes.age)} onChange={e=>update('age',e.target.value===''?null:Number(e.target.value))}/>
